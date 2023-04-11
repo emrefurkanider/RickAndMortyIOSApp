@@ -7,6 +7,7 @@
 
 import UIKit
 
+///Controller to show and search for Episode ///Episode göstermek ve aramak için denetleyici
 final class RMEpisodeViewController: UIViewController {
 
     override func viewDidLoad() {

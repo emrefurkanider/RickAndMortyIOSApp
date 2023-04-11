@@ -7,6 +7,7 @@
 
 import UIKit
 
+///Controller to show and search for Characters ///Characters göstermek ve aramak için denetleyici
 final class RMTabViewController: UITabBarController {
 
     override func viewDidLoad() {
@@ -30,7 +31,7 @@ final class RMTabViewController: UITabBarController {
         let nav3 = UINavigationController(rootViewController: episodesVC)
         let nav4 = UINavigationController(rootViewController: settingsVC)
         
-//        ALT BAR SİMGELERI EKLENDI
+///ALT BAR SİMGELERI EKLENDI
         nav1.tabBarItem = UITabBarItem(title: "Characters",
                                        image: UIImage(systemName: "person"),
                                        tag: 1)
@@ -44,7 +45,7 @@ final class RMTabViewController: UITabBarController {
                                        image: UIImage(systemName: "gear"),
                                        tag: 4)
         
-//        UST BAR YAZISI BUYUTULDU
+///UST BAR YAZISI BUYUTULDU
         for nav in [nav1, nav2, nav3, nav4]{
             nav.navigationBar.prefersLargeTitles = true
         }

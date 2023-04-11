@@ -7,6 +7,7 @@
 
 import UIKit
 
+///Controller to show various app options and settings ///Çeşitli Uygulama seçeneklerini ve ayarlarını gösteren denetleyeci
 final class RMSettingsViewController: UIViewController {
 
     override func viewDidLoad() {
