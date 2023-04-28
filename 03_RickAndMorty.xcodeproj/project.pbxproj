@@ -22,6 +22,7 @@
 		CD1586F429E4989A0015F1CF /* RMLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1586F329E4989A0015F1CF /* RMLocationViewController.swift */; };
 		CD1586F629E498B10015F1CF /* RMEpisodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1586F529E498B10015F1CF /* RMEpisodeViewController.swift */; };
 		CD1586F829E498C00015F1CF /* RMSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1586F729E498C00015F1CF /* RMSettingsViewController.swift */; };
+		CD520C9829EF313C001D08FA /* RMGetAllCharactersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD520C9729EF313C001D08FA /* RMGetAllCharactersResponse.swift */; };
 		CD90389D29E5ED3700A42784 /* RMService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD90389C29E5ED3700A42784 /* RMService.swift */; };
 		CD9038A029E5ED5100A42784 /* RMRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD90389F29E5ED5100A42784 /* RMRequest.swift */; };
 		CD9038A229E5EE6C00A42784 /* RMEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9038A129E5EE6C00A42784 /* RMEndpoint.swift */; };
@@ -69,6 +70,7 @@
 		CD1586F329E4989A0015F1CF /* RMLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMLocationViewController.swift; sourceTree = "<group>"; };
 		CD1586F529E498B10015F1CF /* RMEpisodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMEpisodeViewController.swift; sourceTree = "<group>"; };
 		CD1586F729E498C00015F1CF /* RMSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMSettingsViewController.swift; sourceTree = "<group>"; };
+		CD520C9729EF313C001D08FA /* RMGetAllCharactersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMGetAllCharactersResponse.swift; sourceTree = "<group>"; };
 		CD90389C29E5ED3700A42784 /* RMService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMService.swift; sourceTree = "<group>"; };
 		CD90389F29E5ED5100A42784 /* RMRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMRequest.swift; sourceTree = "<group>"; };
 		CD9038A129E5EE6C00A42784 /* RMEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMEndpoint.swift; sourceTree = "<group>"; };
@@ -202,13 +204,8 @@
 		CD1586E729E496450015F1CF /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				CDF7898529E886F000AB0B1F /* RMLocation.swift */,
-				CD1586EC29E497AB0015F1CF /* RMCharacter.swift */,
-				CD1586EE29E497BD0015F1CF /* RMEpisode.swift */,
-				CDF7898329E885DA00AB0B1F /* RMOrigin.swift */,
-				CDF7898729E8878500AB0B1F /* RMSingleLocation.swift */,
-				CDF7898929E8896C00AB0B1F /* RMCharacterStatus.swift */,
-				CDF7898B29E889BD00AB0B1F /* RMCharacterGender.swift */,
+				CD520C9629EF30DC001D08FA /* APIResponesTypes */,
+				CD520C9529EF30BD001D08FA /* DataTypes */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -231,6 +228,28 @@
 				CD1586F729E498C00015F1CF /* RMSettingsViewController.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		CD520C9529EF30BD001D08FA /* DataTypes */ = {
+			isa = PBXGroup;
+			children = (
+				CDF7898529E886F000AB0B1F /* RMLocation.swift */,
+				CD1586EC29E497AB0015F1CF /* RMCharacter.swift */,
+				CD1586EE29E497BD0015F1CF /* RMEpisode.swift */,
+				CDF7898329E885DA00AB0B1F /* RMOrigin.swift */,
+				CDF7898729E8878500AB0B1F /* RMSingleLocation.swift */,
+				CDF7898929E8896C00AB0B1F /* RMCharacterStatus.swift */,
+				CDF7898B29E889BD00AB0B1F /* RMCharacterGender.swift */,
+			);
+			path = DataTypes;
+			sourceTree = "<group>";
+		};
+		CD520C9629EF30DC001D08FA /* APIResponesTypes */ = {
+			isa = PBXGroup;
+			children = (
+				CD520C9729EF313C001D08FA /* RMGetAllCharactersResponse.swift */,
+			);
+			path = APIResponesTypes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,6 +385,7 @@
 			files = (
 				CDF7898429E885DA00AB0B1F /* RMOrigin.swift in Sources */,
 				CDF7898829E8878500AB0B1F /* RMSingleLocation.swift in Sources */,
+				CD520C9829EF313C001D08FA /* RMGetAllCharactersResponse.swift in Sources */,
 				CDF7898A29E8896C00AB0B1F /* RMCharacterStatus.swift in Sources */,
 				CDF7898C29E889BD00AB0B1F /* RMCharacterGender.swift in Sources */,
 				CD1586F429E4989A0015F1CF /* RMLocationViewController.swift in Sources */,

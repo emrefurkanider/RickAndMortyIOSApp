@@ -17,7 +17,7 @@ final class RMRequest {
     private let endpoint: RMEndpoint
     
     ///Path components for API, if any /// Varsa, API için yol bileşenleri
-    private let pathComponents: Set<String>
+    private let pathComponents: [String]
     
     ///Query arguments for API, if any ///Varsa, API için sorgu bağımsız değişkenleri
     private let queryParameters: [URLQueryItem]
@@ -63,11 +63,15 @@ final class RMRequest {
     ///   - queryParameters: Collections of query parameters /// Sorgu parametresi koleksiyonları
     init(
         endpoint: RMEndpoint,
-        pathComponents: Set<String> = [],
+        pathComponents: [String] = [],
         queryParameters: [URLQueryItem] = []
-    ){
+    ){ 
         self.endpoint = endpoint
         self.pathComponents = pathComponents
         self.queryParameters = queryParameters
     }
+}
+
+extension RMRequest{
+    static let listCharacterRequests = RMRequest(endpoint: .character)
 }
